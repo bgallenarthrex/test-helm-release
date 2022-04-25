@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: goping-deployment
+  namespace: bg-test
+spec:
+  selector:
+    matchLabels:
+      app: goping
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: goping
+    spec:
+      containers:
+      - image: {{ .Values.deployment.image }}:{{ .Values.deployment.tag }}
+        name: goping
+        ports:
+        - containerPort: 8080
+
+

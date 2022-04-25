@@ -1,0 +1,3 @@
+deployment:
+  image: 722036142298.dkr.ecr.us-east-1.amazonaws.com/docker-gs-ping
+  tag: 1.01
