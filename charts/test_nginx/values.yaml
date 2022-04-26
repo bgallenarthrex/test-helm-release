@@ -1,0 +1,5 @@
+app: nginxApp
+namespace: test-nginx
+deployment:
+  image: nginx
+  tag: 1.21
