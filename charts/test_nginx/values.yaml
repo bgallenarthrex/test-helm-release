@@ -1,4 +1,4 @@
-app: nginxApp
+app: nginxapp
 namespace: test-nginx
 deployment:
   image: nginx

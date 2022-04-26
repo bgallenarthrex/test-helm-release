@@ -3,8 +3,8 @@ kind: Service
 metadata:
   annotations:
     service.beta.kubernetes.io/aws-load-balancer-backend-protocol: http
-  name: {{ .Values.deployment.app }}-loadbalancer
-  namespace: {{ .Values.deployment.namespace }}
+  name: {{ .Values.app }}-loadbalancer
+  namespace: {{ .Values.namespace }}
 spec:
   type: LoadBalancer
   ports:
@@ -13,4 +13,4 @@ spec:
       targetPort: 80
       protocol: TCP
   selector:
-    app: {{ .Values.deployment.app }}
+    app: {{ .Values.app }}
