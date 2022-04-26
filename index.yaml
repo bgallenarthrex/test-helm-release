@@ -21,4 +21,15 @@ entries:
     urls:
     - https://github.com/bgallenarthrex/test-helm-release/releases/download/goping-0.1.3/goping-0.1.3.tgz
     version: 0.1.3
-generated: "2022-04-25T21:03:21.16805797Z"
+  nginx-test-app:
+  - apiVersion: v2
+    appVersion: 1.16.1
+    created: "2022-04-26T17:23:20.963941861Z"
+    description: A simple nginx test app
+    digest: 23db39ff5312e83ca708eba9bbdc7e7b75bfed045ea41d0a1038799d8a4cc9ff
+    name: nginx-test-app
+    type: application
+    urls:
+    - https://github.com/bgallenarthrex/test-helm-release/releases/download/nginx-test-app-0.1.1/nginx-test-app-0.1.1.tgz
+    version: 0.1.1
+generated: "2022-04-26T17:23:20.963953661Z"
